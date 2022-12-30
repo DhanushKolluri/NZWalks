@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NZWalks.API.Migrations
 {
     /// <inheritdoc />
-    public partial class IntialMigration : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,7 @@ namespace NZWalks.API.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Code = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Area = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Area = table.Column<double>(type: "float", nullable: false),
                     Lat = table.Column<double>(type: "float", nullable: false),
                     Long = table.Column<double>(type: "float", nullable: false),
                     Population = table.Column<long>(type: "bigint", nullable: false)

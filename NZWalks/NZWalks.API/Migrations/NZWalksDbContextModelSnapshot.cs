@@ -28,9 +28,8 @@ namespace NZWalks.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Area")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<double>("Area")
+                        .HasColumnType("float");
 
                     b.Property<string>("Code")
                         .IsRequired()
